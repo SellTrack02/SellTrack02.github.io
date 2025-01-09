@@ -785,8 +785,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 24px;
 }
 
+
 /* Call To Action Section
 --------------------------------*/
+#call-to-action1, #call-to-action2, #call-to-action3 {
+  background-attachment: fixed;
+}
+
+/* Mobil cihazlarda arka plan kaydırılır */
+@media (max-width: 768px) {
+  #call-to-action1, #call-to-action2, #call-to-action3 {
+    background-attachment: scroll; /* Mobilde parallax kaldırılır */
+    background-position: center top; /* Arka planı yukarıda ortalar */
+  }
+}
+
+
 #call-to-action1 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/img5.png) fixed center center;
   background-size: cover;

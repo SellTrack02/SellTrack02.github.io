@@ -786,108 +786,50 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
-/* Call To Action Section
---------------------------------*/
-#call-to-action1, #call-to-action2, #call-to-action3 {
-  background-attachment: fixed;
-}
-
-/* Mobil cihazlarda arka plan kaydırılır */
-@media (max-width: 768px) {
-  #call-to-action1, #call-to-action2, #call-to-action3 {
-    background-attachment: scroll; /* Mobilde parallax kaldırılır */
-    background-position: center top; /* Arka planı yukarıda ortalar */
-  }
-}
-
-
-#call-to-action1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/img5.png) fixed center center;
+/* Genel Call To Action Ayarları */
+#call-to-action1, #call-to-action2, #call-to-action3, #call-to-action4, #call-to-action5 {
   background-size: cover;
   padding: 80px 0;
+}
+
+/* Arka Planlar */
+#call-to-action1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/desktop/img1-desktop.png) fixed center center;
 }
 
 #call-to-action2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/img4.png) fixed center center;
-  background-size: cover;
-  padding: 80px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/desktop/img2-desktop.jpg) fixed center center;
 }
 
 #call-to-action3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/img6.jpg) fixed center center;
-  background-size: cover;
-  padding: 80px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/desktop/img3-desktop.jpg) fixed center center;
 }
 
 #call-to-action4 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/call-to-action-bg.jpg) fixed center center;
-  background-size: cover;
-  padding: 80px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/desktop/img4-desktop.jpg) fixed center center;
 }
 
 #call-to-action5 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/call-to-action-bg.jpg) fixed center center;
-  background-size: cover;
-  padding: 80px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/desktop/img5-desktop.jpg) fixed center center;
 }
 
-#call-to-action {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/call-to-action-bg.jpg) fixed center center;
-  background-size: cover;
-  padding: 80px 0;
-}
 
-#call-to-action .cta-title {
+/* Başlıklar ve Metinler */
+#call-to-action1 .cta-title, #call-to-action2 .cta-title, #call-to-action3 .cta-title,
+#call-to-action4 .cta-title, #call-to-action5 .cta-title {
   color: #fff;
   font-size: 28px;
   font-weight: 700;
+
 }
 
-#call-to-action .cta-text {
+#call-to-action1 .cta-text, #call-to-action2 .cta-text, #call-to-action3 .cta-text,
+#call-to-action4 .cta-text, #call-to-action5 .cta-text {
   color: #fff;
 }
 
-#call-to-action1 .cta-title {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-#call-to-action1 .cta-text {
-  color: #fff;
-}
-
-#call-to-action2 .cta-title {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-#call-to-action2 .cta-text {
-  color: #fff;
-}
-
-#call-to-action3 .cta-title {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-#call-to-action3 .cta-text {
-  color: #fff;
-}
-
-
-@media (min-width: 769px) {
-  #call-to-action1 .cta-btn-container {
-    background-attachment: scroll; /* Mobil cihazlarda `fixed` yerine `scroll` kullan */
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-}
-
-#call-to-action1 .cta-btn {
+/* Düğme Ortak Ayarları */
+.cta-btn {
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -902,68 +844,81 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-#call-to-action1 .cta-btn:hover {
+.cta-btn:hover {
   background: #2dc997;
   border: 2px solid #2dc997;
 }
 
+
 @media (min-width: 769px) {
-  #call-to-action2 .cta-btn-container {
+  #call-to-action1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/desktop/img1-desktop.jpeg) center center no-repeat;
+    background-size: cover; /* Görselin tamamını göstermeye odaklanır */
     background-attachment: scroll; /* Mobil cihazlarda `fixed` yerine `scroll` kullan */
     display: flex;
-    align-items: center;
+    align-items: right;
     justify-content: flex-end;
+
+  }
+  
+  #call-to-action2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/desktop/img2-desktop.jpg) center center no-repeat;
+    background-size: cover; /* Görselin tamamını göstermeye odaklanır */
+
+  }
+  
+  #call-to-action3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/desktop/img3-desktop.jpg) center center no-repeat;
+    background-size: cover; /* Görselin tamamını göstermeye odaklanır */
+
+  }
+  
+  #call-to-action4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/desktop/img4-desktop.jpg) center center no-repeat;
+    background-size: cover; /* Görselin tamamını göstermeye odaklanır */
+
+  }
+  
+  #call-to-action5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/desktop/img5-desktop.jpg) center center no-repeat;
+    background-size: cover; /* Görselin tamamını göstermeye odaklanır */
+
+  }
+  
+}
+
+@media (max-width: 768px) {
+  #call-to-action1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/mobile/img1-mobile.png) center center no-repeat;
+    background-size: cover; /* Görselin tamamını göstermeye odaklanır */
+  }
+
+  #call-to-action2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/mobile/img2-mobile.jpg) center center no-repeat   ;
+    background-size: cover;
+  }
+
+  #call-to-action3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/mobile/img3-mobile.jpg) center center no-repeat;
+    background-size: cover;
+  }
+
+  #call-to-action3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/mobile/img3-mobile.jpg) center center no-repeat;
+    background-size: cover;
+  }
+
+  #call-to-action4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/mobile/img4-mobile.jpg) center center no-repeat;
+    background-size: cover;
+  }
+
+  #call-to-action5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/mobile/img5-mobile.jpg) center center no-repeat;
+    background-size: cover;
   }
 }
 
-#call-to-action2 .cta-btn {
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 30px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-#call-to-action2 .cta-btn:hover {
-  background: #2dc997;
-  border: 2px solid #2dc997;
-}
-
-@media (min-width: 769px) {
-  #call-to-action3 .cta-btn-container {
-    background-attachment: scroll; /* Mobil cihazlarda `fixed` yerine `scroll` kullan */
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-}
-
-#call-to-action3 .cta-btn {
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 30px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-#call-to-action3 .cta-btn:hover {
-  background: #2dc997;
-  border: 2px solid #2dc997;
-}
 
 /* Portfolio Section
 --------------------------------*/

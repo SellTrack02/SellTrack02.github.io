@@ -47,6 +47,15 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff url("../img/preloader.svg") no-repeat center center;
 }
 
+.extra-text {
+  opacity: 0; /* Varsayılan olarak görünmez */
+  transition: opacity 0.3s ease-in-out; /* Geçiş efekti */
+}
+
+.extra-text.visible {
+  opacity: 1; /* Görünür hale gelir */
+}
+
 /* Back to top button */
 .back-to-top {
   position: fixed;
@@ -518,7 +527,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container .background {
-  min-height: 300px;
   background: url(../img/aboutt.jpg) center top no-repeat;
   background-size: cover; /* Resmi konteynerin boyutlarına göre kırp */
   border-radius: 10px; /* Köşeleri 10 piksel yuvarla */
@@ -540,6 +548,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding-top: 15px;
   }
 }
+
+
 
 #about .about-container p {
   line-height: 26px;
@@ -681,8 +691,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #facts .counters span {
   font-size: 48px;
-  display: block;
   color: #2dc997;
+  display: inline-block; /* Sayıyı aynı satıra getirir */
+}
+
+#facts .counters span + .extra-text {
+  font-size: 24px;
+  color: #2dc997;
+  font-weight: bold;
+  margin-left: 5px; /* Sayı ile metin arasına boşluk ekler */
+  display: inline-block; /* Ekstra metni aynı satıra getirir */
+  vertical-align: baseline; /* Sayı ile hizalama */
 }
 
 #facts .counters p {
@@ -691,6 +710,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
 }
+
 
 /* Services Section
 --------------------------------*/

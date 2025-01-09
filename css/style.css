@@ -764,6 +764,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (min-width: 769px) {
   #call-to-action1 .cta-btn-container {
+    background-attachment: scroll; /* Mobil cihazlarda `fixed` yerine `scroll` kullan */
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -792,6 +793,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (min-width: 769px) {
   #call-to-action2 .cta-btn-container {
+    background-attachment: scroll; /* Mobil cihazlarda `fixed` yerine `scroll` kullan */
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -820,6 +822,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (min-width: 769px) {
   #call-to-action3 .cta-btn-container {
+    background-attachment: scroll; /* Mobil cihazlarda `fixed` yerine `scroll` kullan */
     display: flex;
     align-items: center;
     justify-content: flex-end;

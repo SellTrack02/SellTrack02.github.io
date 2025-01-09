@@ -856,7 +856,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-size: cover; /* Görselin tamamını göstermeye odaklanır */
     background-attachment: scroll; /* Mobil cihazlarda `fixed` yerine `scroll` kullan */
     display: flex;
-    align-items: right;
+    align-items: center;
     justify-content: flex-end;
 
   }

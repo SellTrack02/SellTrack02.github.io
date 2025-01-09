@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Regna Bootstrap Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <style>
+    .outer-text {
+      opacity: 0.6;
+      /* Yarı soluk */
+    }
+
+    .inner-text {
+      opacity: 0.8;
+      /* Tam opak */
+      color: rgb(255, 255, 255);
+      /* Canlı renk */
+      font-weight: bold;
+    }
+  </style>
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Regna
+    Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="index.html"><img src="img/logo.png" alt="" title="" /></img></a>
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="#hero">Regna</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-has-children"><a href="">Seçenekler</a>
+            <ul>
+              <li><a href="tazminat-sureci.html">Tazminat Süreçleri</a></li>
+              <li><a href="tazminat-hesapla.html">Tazminat Hesapla</a></li>
+              <li><a href="#services">Makaleler</a></li>
+              <li><a href="#contact">Bize Ulaşın</a></li>
+              <li><a href="kvkk.html">KVKK</a></li>
+              <li><a href="#contact">Destek Alın</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+      <!-- İçerik Kısmı -->
+
+
+      <!-- Form Kısmı -->
+      <section id="contact">
+        <div class="container wow fadeInUp mt-5">
+          <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-8">
+              <h2>Değer Kaybı Nedir?</h2>
+              <p>
+                Değer kaybı, bir aracın kaza sonrası onarılmış olmasına rağmen ikinci el piyasa değerinde meydana gelen
+                düşüşü ifade eder.
+                Araç, hasar geçmişi nedeniyle alıcılar tarafından riskli görülebilir ve bu durum piyasa değerini
+                etkiler.
+              </p>
+
+              <h3>Araç Hasar Bedeli</h3>
+              <p>
+                Araç hasar bedeli, bir aracın kaza sonrası tamir edilmesi için gereken tüm maliyetleri kapsar. Bu
+                maliyetler, işçilik, yedek parça, boya ve kaporta masraflarını içerir.
+              </p>
+
+              <h3>Pert Maliyeti</h3>
+              <p>
+                Pert maliyeti, bir aracın tamir edilemez durumda olduğu durumlarda sigorta şirketinin ödediği toplam
+                tazminat tutarını ifade eder. Pert olmuş araçlar genellikle hurdacılara satılır veya parçaları
+                değerlendirilir.
+              </p>
+
+              <h4>Eğer bir kazaya karıştıysanız ve haklarınızı öğrenmek istiyorsanız formu doldurarak bizimle iletişime
+                geçebilirsiniz.</h4>
+              <div class="form">
+                <form action="#" method="post" class="mt-4">
+                  <!-- Kusur Durumu -->
+                  <div class="form-group">
+                    <label for="kusurDurumu"><strong>Kazadaki Kusur Durumunuz</strong></label>
+                    <select id="kusurDurumu" name="kusurDurumu" class="form-control" required>
+                      <option value="">- Lütfen Seçiniz -</option>
+                      <option value="tam-kusurlu">Tam Kusurlu</option>
+                      <option value="kusursuz">Kusursuz</option>
+                      <option value="ortak-kusurlu">Ortak Kusurlu</option>
+                    </select>
+                  </div>
+
+                  <!-- Araç Marka ve Model -->
+                  <div class="form-group">
+                    <label for="aracMarkaModel"><strong>Aracınızın Marka ve Modeli</strong></label>
+                    <input type="text" id="aracMarkaModel" name="aracMarkaModel" class="form-control"
+                      placeholder="Örn: Toyota Corolla 2020" required>
+                  </div>
+
+                  <!-- Hasarlı Kısımlar -->
+                  <div class="form-group">
+                    <label for="hasarKisimlar"><strong>Aracınız Hangi Kısımlarından Hasar Aldı?</strong></label>
+                    <textarea id="hasarKisimlar" name="hasarKisimlar" rows="3" class="form-control"
+                      placeholder="Örn: Sol ön kapı, arka tampon" required></textarea>
+                  </div>
+
+                  <!-- Gönder Butonu -->
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Formu Gönder</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        2025 &copy; Tüm Hakları Saklıdır.
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

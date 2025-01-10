@@ -1263,20 +1263,27 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #ccc;
 }
 
-.btn-whatsapp {
-  display: inline-block;
-  background-color: #25D366;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 16px;
-  padding: 10px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+.whatsapp-float {
+  position: fixed; /* Sabit konum */
+  bottom: 20px;    /* Sayfanın altından 20px yukarıda */
+  right: 20px;     /* Sayfanın sağından 20px içeride */
+  z-index: 1000;   /* Diğer elemanların üstünde olsun */
+  background-color: #25D366; /* WhatsApp yeşili */
+  border-radius: 50%;        /* Daire şekli */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Hafif gölge */
+  padding: 10px; /* İç boşluk */
+  display: flex; /* İçeriği ortalamak için flexbox */
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; /* Link alt çizgisi kaldırılır */
 }
 
-.btn-whatsapp:hover {
-  background-color: #1eb857;
+.whatsapp-float img {
+  width: 40px;
+  height: 40px;
+}
+
+.whatsapp-float:hover {
+  background-color: #1eb857; /* Hover durumunda daha koyu yeşil */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }

@@ -841,6 +841,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/desktop/img5-desktop.jpg) fixed center center;
 }
 
+#call-to-action6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/desktop/img6-desktop.jpg) fixed center center;
+}
+
 
 /* Başlıklar ve Metinler */
 #call-to-action1 .cta-title, #call-to-action2 .cta-title, #call-to-action3 .cta-title,

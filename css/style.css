@@ -815,7 +815,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 /* Genel Call To Action Ayarları */
-#call-to-action1, #call-to-action2, #call-to-action3, #call-to-action4, #call-to-action5, #call-to-action6 {
+#call-to-action1, #call-to-action2, #call-to-action3, #call-to-action4, #call-to-action5, #call-to-action6, #call-to-action7, #call-to-action8 {
   background-size: cover;
   padding: 80px 0;
 }
@@ -845,10 +845,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/desktop/img6-desktop.jpg) fixed center center;
 }
 
+#call-to-action7 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/desktop/img7-desktop.jpg) fixed center center;
+}
+
+#call-to-action8 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/desktop/img8-desktop.jpg) fixed center center;
+}
 
 /* Başlıklar ve Metinler */
 #call-to-action1 .cta-title, #call-to-action2 .cta-title, #call-to-action3 .cta-title,
-#call-to-action4 .cta-title, #call-to-action5 .cta-title, #call-to-action6 .cta-title {
+#call-to-action4 .cta-title, #call-to-action5 .cta-title, #call-to-action6 .cta-title , #call-to-action7 .cta-title , #call-to-action8 .cta-title {
   color: #fff;
   font-size: 28px;
   font-weight: 700;
@@ -856,7 +863,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action1 .cta-text, #call-to-action2 .cta-text, #call-to-action3 .cta-text,
-#call-to-action4 .cta-text, #call-to-action5  .cta-text, #call-to-action6  .cta-text {
+#call-to-action4 .cta-text, #call-to-action5  .cta-text, #call-to-action6  .cta-text, #call-to-action7  .cta-text, #call-to-action8  .cta-text {
   color: #fff;
 }
 
@@ -922,6 +929,18 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-size: cover; /* Görselin tamamını göstermeye odaklanır */
 
   }
+
+  #call-to-action7 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/desktop/img7-desktop.jpg) center center no-repeat;
+    background-size: cover; /* Görselin tamamını göstermeye odaklanır */
+
+  }
+
+  #call-to-action8 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/desktop/img8-desktop.jpg) center center no-repeat;
+    background-size: cover; /* Görselin tamamını göstermeye odaklanır */
+
+  }
   
 }
 
@@ -958,6 +977,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #call-to-action6 {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/mobile/img6-mobile.jpg) center center no-repeat;
+    background-size: cover;
+  }
+
+  #call-to-action7 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/mobile/img7-mobile.jpg) center center no-repeat;
+    background-size: cover;
+  }
+
+  #call-to-action8 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/mobile/img8-mobile.jpg) center center no-repeat;
     background-size: cover;
   }
 }

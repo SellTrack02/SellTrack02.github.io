@@ -1262,3 +1262,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 13px;
   color: #ccc;
 }
+
+.btn-whatsapp {
+  display: inline-block;
+  background-color: #25D366;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1eb857;
+}

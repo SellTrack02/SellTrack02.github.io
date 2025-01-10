@@ -1263,27 +1263,39 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #ccc;
 }
 
+/* Genel Yüzen Buton Stili */
 .whatsapp-float {
   position: fixed; /* Sabit konum */
-  bottom: 20px;    /* Sayfanın altından 20px yukarıda */
-  right: 20px;     /* Sayfanın sağından 20px içeride */
-  z-index: 1000;   /* Diğer elemanların üstünde olsun */
+  bottom: 20px;    /* Alt kenardan uzaklık */
+  left: 20px;      /* Sol kenardan uzaklık */
+  z-index: 1000;   /* Üstte görünsün */
   background-color: #25D366; /* WhatsApp yeşili */
   border-radius: 50%;        /* Daire şekli */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Hafif gölge */
-  padding: 10px; /* İç boşluk */
-  display: flex; /* İçeriği ortalamak için flexbox */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Gölge */
+  padding: 10px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none; /* Link alt çizgisi kaldırılır */
+  text-decoration: none;
+  transition: all 0.3s ease; /* Hover geçiş efekti */
 }
 
-.whatsapp-float img {
-  width: 40px;
-  height: 40px;
+/* Mobil Görünüm Ayarları */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    width: 60px;   /* Mobilde buton boyutunu büyüt */
+    height: 60px;
+    bottom: 10px;  /* Alt kenardan daha yakın */
+    left: 10px;    /* Sol kenardan daha yakın */
+  }
+  .whatsapp-float img {
+    width: 40px;   /* WhatsApp logosunu ayarla */
+    height: 40px;
+  }
 }
 
+/* Hover Efekt */
 .whatsapp-float:hover {
-  background-color: #1eb857; /* Hover durumunda daha koyu yeşil */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+  background-color: #1eb857; /* Daha koyu yeşil */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); /* Hover gölgesi */
 }
